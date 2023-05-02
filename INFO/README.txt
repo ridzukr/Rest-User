@@ -30,7 +30,7 @@ GET http://localhost:4567/users
 
 {
 	"id": 1,
-    "Name": "Alice",
+    "name": "Alice",
     "phone": "067 237-5599",
     "email": "ali@mail.com"
 }
