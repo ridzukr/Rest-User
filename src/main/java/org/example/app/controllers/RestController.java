@@ -7,10 +7,7 @@ import org.example.app.services.UserServiceImpl;
 import org.example.app.utils.Response;
 import org.example.app.utils.Status;
 
-import static spark.Spark.delete;
-import static spark.Spark.get;
-import static spark.Spark.post;
-import static spark.Spark.put;
+import static spark.Spark.*;
 
 
 public class RestController {
@@ -19,6 +16,7 @@ public class RestController {
 
         final UserService service = new UserServiceImpl();
 
+        port(8000);
         post("/users", (request, response) -> {
             response.type("application/json");
 
